@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - Конференции.РФ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a class="logo" href="index.html">
+                <img src="лого" alt="Конференции.РФ">
+                Конференции.РФ
+            </a>
+
+            <div class="menu">
+                <a href="index.html">Регистрация</a>
+                <a href="login.html">Авторизация</a>
+                <a href="history.html">Личный кабинет</a>
+                <a href="createt.html">Заявка</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page">
+        <section class="hero">
+            <h1>Мои заявки</h1>
+            <p>История бронирований и быстрый доступ к новой заявке.</p>
+            <a class="btn" href="createt.html">Новая заявка</a>
+        </section>
+
+        <section class="cards">
+            <article class="card">
+                <p>Помещение: <b>Коворкинг</b></p>
+                <p>Дата: <b>29.06.2026</b></p>
+                <p>Оплата: <b>Наличные</b></p>
+                <p>Статус: <b>Новая</b></p>
+            </article>
+
+            <article class="card">
+                <p>Помещение: <b>Аудитория</b></p>
+                <p>Дата: <b>15.06.2026</b></p>
+                <p>Оплата: <b>Перевод по номеру телефона</b></p>
+                <p>Статус: <b>Мероприятие назначено</b></p>
+            </article>
+
+            <article class="card">
+                <p>Помещение: <b>Кинозал</b></p>
+                <p>Дата: <b>12.03.2026</b></p>
+                <p>Оплата: <b>Наличные</b></p>
+                <p>Статус: <b>Мероприятие завершено</b></p>
+            </article>
+        </section>
+
+        <section class="slider" data-slider>
+            <button class="slider-btn" data-prev type="button">‹</button>
+            <img src="фото" alt="Зал для конференции">
+            <button class="slider-btn" data-next type="button">›</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a class="footer-logo" href="index.html">
+            <img src="лого" alt="Конференции.РФ">
+            Конференции.РФ
+        </a>
+
+        <a class="admin-link" href="admin.html">Панель администратора</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

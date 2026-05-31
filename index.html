@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - Конференции.РФ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a class="logo" href="index.html">
+                <img src="лого" alt="Конференции.РФ">
+                Конференции.РФ
+            </a>
+
+            <div class="menu">
+                <a href="index.html">Регистрация</a>
+                <a href="login.html">Авторизация</a>
+                <a href="history.html">Личный кабинет</a>
+                <a href="createt.html">Заявка</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page">
+        <section class="hero">
+            <h1>Бронирование площадок для мероприятий</h1>
+            <p>Создайте аккаунт, выберите помещение и отправьте заявку за пару минут.</p>
+        </section>
+
+        <form class="form" data-form>
+            <h2>Регистрация</h2>
+
+            <input
+                name="login"
+                type="text"
+                placeholder="Логин"
+                pattern="[A-Za-z0-9]{6,}"
+                title="Минимум 6 символов: латинские буквы и цифры"
+                required
+            >
+
+            <input
+                name="password"
+                type="password"
+                placeholder="Пароль"
+                minlength="8"
+                required
+            >
+
+            <input name="name" type="text" placeholder="ФИО" required>
+
+            <input
+                name="phone"
+                type="tel"
+                placeholder="8(XXX)XXX-XX-XX"
+                pattern="8\(\d{3}\)\d{3}-\d{2}-\d{2}"
+                required
+            >
+
+            <input name="email" type="email" placeholder="Email" required>
+
+            <button type="submit">Создать пользователя</button>
+
+            <p class="text">
+                Уже зарегистрированы?
+                <a href="login.html">Войти</a>
+            </p>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <a class="footer-logo" href="index.html">
+            <img src="лого" alt="Конференции.РФ">
+            Конференции.РФ
+        </a>
+
+        <a class="admin-link" href="admin.html">Панель администратора</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

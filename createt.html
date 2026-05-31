@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новая заявка - Конференции.РФ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a class="logo" href="index.html">
+                <img src="лого" alt="Конференции.РФ">
+                Конференции.РФ
+            </a>
+
+            <div class="menu">
+                <a href="index.html">Регистрация</a>
+                <a href="login.html">Авторизация</a>
+                <a href="history.html">Личный кабинет</a>
+                <a href="createt.html">Заявка</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page">
+        <section class="hero">
+            <h1>Формирование заявки</h1>
+            <p>Выберите помещение, дату и удобный способ оплаты.</p>
+        </section>
+
+        <form class="form" data-form>
+            <h2>Новая заявка</h2>
+
+            <label>Помещение</label>
+            <select required>
+                <option value="">Выберите помещение</option>
+                <option>Аудитория</option>
+                <option>Коворкинг</option>
+                <option>Кинозал</option>
+            </select>
+
+            <label>Дата</label>
+            <input type="date" required>
+
+            <label>Способ оплаты</label>
+            <select required>
+                <option value="">Выберите способ оплаты</option>
+                <option>Наличные</option>
+                <option>Перевод по номеру телефона</option>
+            </select>
+
+            <button type="submit">Создать заявку</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <a class="footer-logo" href="index.html">
+            <img src="лого" alt="Конференции.РФ">
+            Конференции.РФ
+        </a>
+
+        <a class="admin-link" href="admin.html">Панель администратора</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
